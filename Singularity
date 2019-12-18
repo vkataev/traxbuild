@@ -34,6 +34,11 @@ From: ubuntu:latest
     echo "S: Install trax"
     /venv/bin/pip install --upgrade trax
 
+%post
+
+    echo "S: Install matplotlib"
+    /venv/bin/pip install --upgrade matplotlib
+
 #   echo "S: Install dev env"
 #   apt-get install -y build-essential libssl-dev libffi-dev python3-dev python3-pip
 #   echo "S: Install dependencies"
