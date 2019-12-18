@@ -9,8 +9,8 @@ From: ubuntu:latest
 %post
 
     echo "S: Update and install pip + virtualenv packages"
-    apt update
-    apt install python3-dev python3-pip
+    apt update -y
+    apt install -y python3-dev python3-pip
     pip3 install -U virtualenv
 
     echo "S: Create a virtual environment"
